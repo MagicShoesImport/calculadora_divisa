@@ -307,24 +307,27 @@
 function limpiar()
 {
 
-  $("#tasabcv").val("");
-   $("#tasa_cambio").val("");
-    $("#tasaventa").val("");
- $("#diferenciabs").val("");
-  $("#brecha_porcentaje").val("");
-   $("#cant_comprado").val("");
-     $("#resultado1").val("");
-      $("#cant_bs_comprado").val("");
-       $("#resultado2").val("");
-        $("#banco").val("");
-         $("#porcentaje_total").val("");
-          $("#tasa_final_compra").val("");
-           $("#dolares_final_recibido").val("");
-            $("#bs_final_inv").val("");
-            $("#resultado3").val("");
+  // Limpiar todos los campos
+document.getElementById("tasabcv").value = "";
+document.getElementById("tasa_cambio").value = "";
+document.getElementById("tasaventa").value = "";
+document.getElementById("diferenciabs").value = "";
+document.getElementById("brecha_porcentaje").value = "";
+document.getElementById("cant_comprado").value = "";
+document.getElementById("resultado1").value = "";
+document.getElementById("cant_bs_comprado").value = "";
+document.getElementById("resultado2").value = "";
+document.getElementById("banco").value = "";
+document.getElementById("porcentaje_total").value = "";
+document.getElementById("tasa_final_compra").value = "";
+document.getElementById("dolares_final_recibido").value = "";
+document.getElementById("bs_final_inv").value = "";
+document.getElementById("resultado3").value = "";
 
-
-  $("#metodo_retiro").val("").trigger("change");
+// Limpiar y disparar el evento change en el select
+const metodoRetiro = document.getElementById("metodo_retiro");
+metodoRetiro.value = "";
+metodoRetiro.dispatchEvent(new Event('change'));
 
 
 }
