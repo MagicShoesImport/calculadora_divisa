@@ -303,7 +303,7 @@
     </script>
 
   
-    <script type="text/javascript" src="scripts/diferencia_cambiaria.js<?php echo '?r='.date('Y-m-d H:i:s');?>"></script>
+    <script type="text/javascript" src="diferencia_cambiaria.js<?php echo '?r='.date('Y-m-d H:i:s');?>"></script>
 
     <?php 
     ob_end_flush();
